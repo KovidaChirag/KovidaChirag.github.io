@@ -69,3 +69,21 @@ footer {
         font-size: 2.2rem;
     }
 }
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn.resume {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn.resume:hover {
+    background: #ffd700;
+    color: #333;
+}
