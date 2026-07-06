@@ -9,3 +9,14 @@ function typingEffect() {
     }
 }
 typingEffect();
+
+/* Scroll animation */
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+    sections.forEach(section => {
+        if (section.getBoundingClientRect().top < window.innerHeight - 100) {
+            section.classList.add("show");
+        }
+    });
+});
