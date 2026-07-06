@@ -7,13 +7,36 @@
 
 body {
     background: linear-gradient(135deg, #1d2671, #c33764);
-    color: #fff;
+    color: white;
     text-align: center;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700;
 }
 
 /* HERO */
 header {
     height: 100vh;
+    padding-top: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,28 +47,58 @@ header {
     color: #ffd700;
 }
 
-.btn {
+.hero-buttons {
     margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
     padding: 12px 30px;
-    background: #fff;
+    background: white;
     color: #333;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
 }
 
+.btn.resume {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
 /* SECTIONS */
 section {
     padding: 70px 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* SKILLS */
-.skills span {
-    display: inline-block;
-    margin: 8px;
-    padding: 12px 22px;
+.skill {
+    max-width: 500px;
+    margin: 15px auto;
+    text-align: left;
+}
+
+.bar {
     background: rgba(255,255,255,0.2);
-    border-radius: 25px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bar span {
+    display: block;
+    height: 12px;
+    background: #ffd700;
 }
 
 /* CARDS */
@@ -60,7 +113,7 @@ section {
 /* FOOTER */
 footer {
     padding: 20px;
-    background: rgba(0,0,0,0.25);
+    background: rgba(0,0,0,0.3);
 }
 
 /* MOBILE */
@@ -68,22 +121,4 @@ footer {
     header h1 {
         font-size: 2.2rem;
     }
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.btn.resume {
-    background: transparent;
-    color: #fff;
-    border: 2px solid #fff;
-}
-
-.btn.resume:hover {
-    background: #ffd700;
-    color: #333;
 }
