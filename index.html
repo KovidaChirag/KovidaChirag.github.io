@@ -4,30 +4,37 @@
     <meta charset="UTF-8">
     <title>Kovida | Software Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Work</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+</nav>
 
 <!-- HERO -->
 <header id="home">
     <h1>Hi, I'm <span class="highlight">Kovida</span></h1>
     <p id="typing"></p>
-   <div class="hero-buttons">
-    <a href="#about" class="btn">Explore My Profile</a>
-    <a href="Kovida_Resume.pdf" class="btn resume" download>
-        Download Resume
-    </a>
-</div>
+
+    <div class="hero-buttons">
+        <a href="#about" class="btn">Explore Profile</a>
+        <a href="Kovida_Resume.pdf" class="btn resume" download>Download Resume</a>
+    </div>
 </header>
 
 <!-- ABOUT -->
 <section id="about">
     <h2>About Me</h2>
     <p>
-        Software Developer with strong expertise in Java, Spring Boot,
-        PostgreSQL, REST APIs, Thymeleaf, and Data Analysis.
+        Software Developer with expertise in Java, Spring Boot, PostgreSQL,
+        REST APIs, Thymeleaf, and Data Analysis.  
         Experienced in building secure, scalable, role-based applications.
     </p>
 </section>
@@ -35,16 +42,25 @@
 <!-- SKILLS -->
 <section id="skills">
     <h2>Technical Skills</h2>
-    <div class="skills">
-        <span>Java</span>
-        <span>Spring Boot</span>
-        <span>PostgreSQL</span>
-        <span>REST API</span>
-        <span>Thymeleaf</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>jQuery</span>
+
+    <div class="skill">
+        <label>Java</label>
+        <div class="bar"><span style="width:90%"></span></div>
+    </div>
+
+    <div class="skill">
+        <label>Spring Boot</label>
+        <div class="bar"><span style="width:85%"></span></div>
+    </div>
+
+    <div class="skill">
+        <label>PostgreSQL</label>
+        <div class="bar"><span style="width:80%"></span></div>
+    </div>
+
+    <div class="skill">
+        <label>HTML / CSS / JavaScript</label>
+        <div class="bar"><span style="width:88%"></span></div>
     </div>
 </section>
 
@@ -63,29 +79,37 @@
     <div class="card">
         <h3>🏥 Health Management System</h3>
         <p>
-            Secure healthcare system with data analytics, reporting,
+            Secure healthcare system with analytics, reporting,
             and backend automation modules.
         </p>
     </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <h2>Experience & Education</h2>
 
     <div class="card">
-        <h3>⚙️ Backend & Data Automation</h3>
-        <p>
-            API development, scheduled jobs, CRUD operations,
-            analytics dashboards, and data processing.
-        </p>
+        <h3>Software Developer</h3>
+        <p>Spring Boot, PostgreSQL, REST APIs, UI Integration</p>
+    </div>
+
+    <div class="card">
+        <h3>Master of Computer Engineering</h3>
+        <p>Data Analysis, Machine Learning, System Design</p>
     </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <b>kovidajames@gmail.com</b></p>
-    <p>GitHub: github.com/Kovidachiragkumar</p>
+    <p>📧 Email: kovidajames@gmail.com</p>
+    <p>💻 GitHub: github.com/KovidaChirag</p>
+    <p>💼 LinkedIn: linkedin.com/in/kovida-chirag</p>
 </section>
 
 <footer>
-    © 2026 | Kovida – Software Developer
+    © 2026 | Kovida — Software Developer
 </footer>
 
 <script src="script.js"></script>
